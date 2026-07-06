@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Mail } from 'lucide-react'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 export function Hero() {
   return (
@@ -59,20 +60,20 @@ export function Hero() {
               href="https://github.com/LukaoModesto"
               target="_blank"
               rel="noreferrer"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-bold text-slate-300 transition hover:border-cyan-400 hover:text-cyan-300"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-cyan-400 hover:text-cyan-300"
               aria-label="GitHub"
             >
-              GH
+              <FaGithub size={20} />
             </a>
 
             <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-bold text-slate-300 transition hover:border-cyan-400 hover:text-cyan-300"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-cyan-400 hover:text-cyan-300"
               aria-label="LinkedIn"
             >
-              in
+              <FaLinkedinIn size={18} />
             </a>
 
             <a
