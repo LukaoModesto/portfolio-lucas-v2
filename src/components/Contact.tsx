@@ -1,8 +1,17 @@
 import { motion } from 'framer-motion'
 import { Mail, Send } from 'lucide-react'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
+
+const whatsappUrl =
+  'https://wa.me/5511953075288?text=Ol%C3%A1%2C%20vim%20do%20seu%20site%20e%20me%20interessei%20pelo%20seu%20curr%C3%ADculo.'
 
 const contacts = [
+  {
+    label: 'WhatsApp',
+    value: 'Enviar mensagem direta',
+    href: whatsappUrl,
+    icon: FaWhatsapp,
+  },
   {
     label: 'GitHub',
     value: 'LukaoModesto',
@@ -53,7 +62,9 @@ export function Contact() {
               </p>
 
               <a
-                href="mailto:seuemail@email.com"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-300"
               >
                 Enviar mensagem
@@ -64,15 +75,14 @@ export function Contact() {
             <div className="space-y-4">
               {contacts.map((contact) => {
                 const Icon = contact.icon
+                const isMail = contact.href.startsWith('mailto')
 
                 return (
                   <a
                     key={contact.label}
                     href={contact.href}
-                    target={contact.href.startsWith('mailto') ? undefined : '_blank'}
-                    rel={
-                      contact.href.startsWith('mailto') ? undefined : 'noreferrer'
-                    }
+                    target={isMail ? undefined : '_blank'}
+                    rel={isMail ? undefined : 'noreferrer'}
                     className="flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/70 p-5 transition hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.05]"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 text-cyan-300">

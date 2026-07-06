@@ -48,11 +48,13 @@ export function Hero() {
             </a>
 
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-bold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+            href="https://wa.me/5511953075288?text=Ol%C3%A1%2C%20vim%20do%20seu%20site%20e%20me%20interessei%20pelo%20seu%20curr%C3%ADculo."
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-bold text-white transition hover:border-cyan-400 hover:text-cyan-300"
             >
               Entrar em contato
-            </a>
+              </a>
           </div>
 
           <div className="mt-10 flex items-center gap-4">
