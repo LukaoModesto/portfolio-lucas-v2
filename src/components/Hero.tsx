@@ -19,7 +19,7 @@ export function Hero() {
           transition={{ duration: 0.7 }}
         >
           <div className="mb-6 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-300">
-            Software Developer • React • TypeScript • Backend • Js • SQL • Python • FastAPI • Java
+            Software Developer • React • TypeScript • Backend
           </div>
 
           <h1 className="max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
@@ -77,7 +77,7 @@ export function Hero() {
             </a>
 
             <a
-              href="mailto:lucasoliveira.odev@gmail.com"
+              href="mailto:seuemail@email.com"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-cyan-400 hover:text-cyan-300"
               aria-label="E-mail"
             >
@@ -127,6 +127,14 @@ export function Hero() {
 
               <p className="pl-6 text-cyan-300">
                 status: <span className="text-emerald-300">'building...'</span>,
+              </p>
+
+              <p className="pl-6 text-cyan-300">
+                currentMission:{' '}
+                <span className="text-violet-300">
+                  'find a job :D'
+                </span>
+                ,
               </p>
 
               <p className="text-slate-500">&#125;</p>
